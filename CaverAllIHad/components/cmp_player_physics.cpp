@@ -1,4 +1,5 @@
 #include "cmp_player_physics.h"
+#include "cmp_item_jetpack.h"
 #include "system_physics.h"
 #include <LevelSystem.h>
 #include <SFML/Window/Keyboard.hpp>
@@ -6,6 +7,8 @@
 using namespace std;
 using namespace sf;
 using namespace Physics;
+
+double prevDT = 0;
 
 bool PlayerPhysicsComponent::isGrounded() const {
   auto touch = getTouching();
@@ -60,8 +63,30 @@ void PlayerPhysicsComponent::update(double dt) {
       setVelocity(Vector2f(getVelocity().x, 0.f));
       teleport(Vector2f(pos.x, pos.y - 2.0f));
       impulse(Vector2f(0, -6.f));
+      prevDT=0;
     }
   }
+
+
+
+    //cout << dt <<endl;
+    if(std::find(_parent->getComponents().begin(),_parent->getComponents().end(),shared_ptr<ItemJetpackComponent>())!= _parent->getComponents().end())
+    {
+        if (Keyboard::isKeyPressed(Keyboard::Space) && prevDT <1) {
+            cout<<prevDT;
+            prevDT += dt;
+            //setVelocity(Vector2f(getVelocity().x, -0.2f));
+            //teleport(Vector2f(pos.x, pos.y - 2.0f));
+            impulse(Vector2f(0, -0.005f));
+
+        }else
+        {
+
+            setVelocity(Vector2f (getVelocity().x,getVelocity().y));
+        }
+    }
+
+
 
   //Are we in air?
   if (!_grounded) {
@@ -78,6 +103,8 @@ void PlayerPhysicsComponent::update(double dt) {
   v.x = copysign(min(abs(v.x), _maxVelocity.x), v.x);
   v.y = copysign(min(abs(v.y), _maxVelocity.y), v.y);
   setVelocity(v);
+
+
 
   PhysicsComponent::update(dt);
 }

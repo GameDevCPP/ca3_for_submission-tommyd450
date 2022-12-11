@@ -1,5 +1,6 @@
 #include "scene_level1.h"
 #include "../components/cmp_player_physics.h"
+#include "../components//cmp_item_jetpack.h"
 #include "../components/cmp_sprite.h"
 #include "../game.h"
 #include <LevelSystem.h>
@@ -28,6 +29,7 @@ void Level1Scene::Load() {
     s->getShape().setOrigin(Vector2f(10.f, 15.f));
 
     player->addComponent<PlayerPhysicsComponent>(Vector2f(20.f, 30.f));
+    player->addComponent<ItemJetpackComponent>(Vector2f(20.f, 30.f));
   }
 
   // Add physics colliders to level tiles.
@@ -61,6 +63,11 @@ void Level1Scene::Update(const double& dt) {
   if (ls::getTileAt(player->getPosition()) == ls::END) {
     Engine::ChangeScene((Scene*)&level2);
   }
+  sf::View view1(sf::FloatRect(300.f, 600.f, 1000.f, 500.f));
+  view1.setCenter(player->getPosition().x,player->getPosition().y);
+  Engine::GetWindow().setView(view1);
+
+
   Scene::Update(dt);
 }
 
