@@ -6,23 +6,31 @@
 #include <LevelSystem.h>
 #include <iostream>
 #include <thread>
+#include <../cellAuto/cellularAutomata.h>
 
 using namespace std;
 using namespace sf;
+using namespace CA;
 
 static shared_ptr<Entity> player;
 
 void Level1Scene::Load() {
+    CellularAutomataGen::noiseGeneration();
+    CellularAutomataGen::unNaturalSelection();
+
   cout << " Scene 1 Load" << endl;
-  ls::loadLevelFile("res/levels/level_1.txt", 40.0f);
+  ls::loadLevelFile("../bin/res/levels/output.txt", 40.0f);
 
   auto ho = Engine::getWindowSize().y - (ls::getHeight() * 40.f);
   ls::setOffset(Vector2f(0, ho));
 
+
   // Create player
   {
     player = makeEntity();
-    player->setPosition(ls::getTilePosition(ls::findTiles(ls::START)[0]));
+
+    player->setPosition(ls::getTilePosition(ls::findTiles(ls::START)[10]));
+
     auto s = player->addComponent<ShapeComponent>();
     s->setShape<sf::RectangleShape>(Vector2f(20.f, 30.f));
     s->getShape().setFillColor(Color::Magenta);
@@ -63,7 +71,7 @@ void Level1Scene::Update(const double& dt) {
   if (ls::getTileAt(player->getPosition()) == ls::END) {
     Engine::ChangeScene((Scene*)&level2);
   }
-  sf::View view1(sf::FloatRect(300.f, 600.f, 1000.f, 500.f));
+  sf::View view1(sf::FloatRect(600.f, 1200.f, 2000.f, 1000.f));
   view1.setCenter(player->getPosition().x,player->getPosition().y);
   Engine::GetWindow().setView(view1);
 

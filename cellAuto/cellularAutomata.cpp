@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <iostream>
+#include<tuple>
 // CellAuto.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 #include <stdlib.h>
@@ -11,40 +12,27 @@
 #include <ctime>
 
 using namespace std;
-int width = 50;
-int height = 50;
-
-bool wall = true;
-bool tunnel = false;
-vector<char> row(width, ' ');
-vector<vector<char>> vect(height, row);
 
 
-namespace CA
-{
-    int width = 50;
-    int height = 50;
 
-    bool wall = true;
-    bool tunnel = false;
+
+namespace CA {
+    int width = 100;
+    int height = 100;
+
+
     vector<char> row(width, ' ');
-    vector<vector<char>> vect(height, row);
+    vector <vector<char>> vect(height, row);
 
-    void CellularAutomataGen::noiseGeneration()
-    {
+    void CellularAutomataGen::noiseGeneration() {
         std::srand(std::time(nullptr));
-        for (int i = 0; i < width - 1; i++)
-        {
+        for (int i = 0; i < width - 1; i++) {
 
-            for (int j = 0; j < height - 1; j++)
-            {
+            for (int j = 0; j < height - 1; j++) {
                 //cout << "here";
-                if (rand() < 15000)
-                {
+                if ((float) rand()/RAND_MAX < 0.4) {
                     vect[i][j] = 'w';
-                }
-                else
-                {
+                } else {
                     vect[i][j] = ' ';
                 }
 
@@ -53,96 +41,174 @@ namespace CA
         }
     }
 
-    void CellularAutomataGen::unNaturalSelection()
-    {
-        for (int i = 0; i < width - 1; i++)
-        {
+    void CellularAutomataGen::fill() {
+        for (int i = 0; i < width - 1; i++) {
 
-            for (int j = 0; j < height - 1; j++)
-            {
+            for (int j = 0; j < height - 1; j++) {
                 int numNeighbours = 0;
 
-                if (vect[i][j] == 'w')
-                {
+
                     // Three Cells above ie . NW, N, NE
-                    if (i != 0 && j >0 && vect[i][j-1]==1)
-                    {
+                    if (i != 0 && j > 0 && vect[i][j - 1] == 'w') {
                         numNeighbours++;
                     }
-                    if (i > 0 && j > 0 && vect[i-1][j - 1] == 'w')
-                    {
+                    if (i > 0 && j > 0 && vect[i - 1][j - 1] == 'w') {
                         numNeighbours++;
                     }
-                    if (i >0 && j > 0 && i<height && vect[i+1][j - 1] == 'w')
-                    {
+                    if (i > 0 && j > 0 && i < height && vect[i + 1][j - 1] == 'w') {
                         numNeighbours++;
                     }
                     // Cells to the left and right ie. West and East
-                    if (i != 0 && j > 0 && vect[i-1][j] == 'w')
-                    {
+                    if (i != 0 && j > 0 && vect[i - 1][j] == 'w') {
                         numNeighbours++;
                     }
-                    if (i != 0 && j > 0 && i < height && vect[i+1][j ] == 'w')
-                    {
+                    if (i != 0 && j > 0 && i < height && vect[i + 1][j] == 'w') {
                         numNeighbours++;
                     }
                     //Cells below ie SW, S , SE
-                    if (i != 0 && j > 0 && j < width && vect[i][j + 1] == 'w')
-                    {
+                    if (i != 0 && j > 0 && j < width && vect[i][j + 1] == 'w') {
                         numNeighbours++;
                     }
-                    if (i != 0 && j > 0 && i < height && j < width &&  vect[i+1][j + 1] == 'w')
-                    {
+                    if (i != 0 && j > 0 && i < height && j < width && vect[i + 1][j + 1] == 'w') {
                         numNeighbours++;
                     }
-                    if (i != 0 && j > 0 && j < width && vect[i-1][j + 1] == 'w')
-                    {
+                    if (i != 0 && j > 0 && j < width && vect[i - 1][j + 1] == 'w') {
                         numNeighbours++;
                     }
-                    //cout << numNeighbours << endl;
 
-                    if (vect[i][j]==1 && numNeighbours < 5 )
-                    {
-                        vect[i][j] = ' ';
-                    }
-                    if (vect[i][j] =='w' && numNeighbours == 2 || numNeighbours == 3)
-                    {
-                        vect[i][j] = 'w';
-                    }
-                    if (vect[i][j] == 'w' && numNeighbours > 3)
-                    {
-                        vect[i][j] = ' ';
-                    }
-                    if (vect[i][j] == ' ' && numNeighbours == 3)
-                    {
-                        vect[i][j] = 'w';
-                    }
+
+                if (vect[i][j] == 'w' && numNeighbours < 3) {
+                    vect[i][j] = ' ';
                 }
+                if (vect[i][j] == ' ' && numNeighbours >4) {
+                    vect[i][j] = 'w';
+                }
+
+
             }
-
         }
-        string current = "";
-        for (int i = 0; i < width - 1; i++)
-        {
+    }
 
-            for (int j = 0; j < height - 1; j++)
+        void CellularAutomataGen::unNaturalSelection() {
+            for (int i = 0; i < width - 1; i++) {
+
+                for (int j = 0; j < height - 1; j++) {
+                    int numNeighbours = 0;
+
+                        // Three Cells above ie . NW, N, NE
+                        if (i != 0 && j > 0 && vect[i][j - 1] == 'w') {
+                            numNeighbours++;
+                        }
+                        if (i > 0 && j > 0 && vect[i - 1][j - 1] == 'w') {
+                            numNeighbours++;
+                        }
+                        if (i > 0 && j > 0 && i < height && vect[i + 1][j - 1] == 'w') {
+                            numNeighbours++;
+                        }
+                        // Cells to the left and right ie. West and East
+                        if (i != 0 && j > 0 && vect[i - 1][j] == 'w') {
+                            numNeighbours++;
+                        }
+                        if (i != 0 && j > 0 && i < height && vect[i + 1][j] == 'w') {
+                            numNeighbours++;
+                        }
+                        //Cells below ie SW, S , SE
+                        if (i != 0 && j > 0 && j < width && vect[i][j + 1] == 'w') {
+                            numNeighbours++;
+                        }
+                        if (i != 0 && j > 0 && i < height && j < width && vect[i + 1][j + 1] == 'w') {
+                            numNeighbours++;
+                        }
+                        if (i != 0 && j > 0 && j < width && vect[i - 1][j + 1] == 'w') {
+                            numNeighbours++;
+                        }
+                        //cout << numNeighbours << endl;
+
+                        if (vect[i][j] == 'w' && numNeighbours < 3) {
+                            vect[i][j] = ' ';
+                        }
+
+                        if (vect[i][j] == ' ' && numNeighbours >4) {
+                            vect[i][j] = 'w';
+                        }
+                }
+
+            }
+            for(int i = 0; i < 5; i++)
             {
-                if (vect[i][j] == 0)
-                {
-                    current += " ";
-                }
-                else
-                {
-                    current += vect[i][j];
-                }
-
+             fill();
             }
-            current+= "\n";
-            cout << current << endl;
+
+
+            determineSpawns();
+
+            string current = "";
+            for (int i = 0; i < width - 1; i++) {
+
+                for (int j = 0; j < height - 1; j++) {
+                    if (vect[i][j] == 0) {
+                        current += " ";
+                    } else {
+                        current += vect[i][j];
+                    }
+
+                }
+                current += "\n";
+                cout << current << endl;
+            }
+            std::ofstream out("../bin/res/levels/output.txt");
+            out << current;
+            out.close();
         }
-        std::ofstream out("output.txt");
-        out << current;
-        out.close();
-    }
+
+
+
+    void CellularAutomataGen::determineSpawns() {
+        for (int i = 0; i < width - 1; i++) {
+
+            for (int j = 0; j < height - 1; j++) {
+                int numNeighbours = 0;
+                if (vect[i][j] == ' ') {
+                    {
+                        // Three Cells above ie . NW, N, NE
+                        if (i != 0 && j > 0 && vect[i][j - 1] == 'w') {
+                            numNeighbours++;
+                        }
+                        if (i > 0 && j > 0 && vect[i - 1][j - 1] == 'w') {
+                            numNeighbours++;
+                        }
+                        if (i > 0 && j > 0 && i < height && vect[i + 1][j - 1] == 'w') {
+                            numNeighbours++;
+                        }
+                        // Cells to the left and right ie. West and East
+                        if (i != 0 && j > 0 && vect[i - 1][j] == 'w') {
+                            numNeighbours++;
+                        }
+                        if (i != 0 && j > 0 && i < height && vect[i + 1][j] == 'w') {
+                            numNeighbours++;
+                        }
+                        //Cells below ie SW, S , SE
+                        if (i != 0 && j > 0 && j < width && vect[i][j + 1] == 'w') {
+                            numNeighbours++;
+                        }
+                        if (i != 0 && j > 0 && i < height && j < width && vect[i + 1][j + 1] == 'w') {
+                            numNeighbours++;
+                        }
+                        if (i != 0 && j > 0 && j < width && vect[i - 1][j + 1] == 'w') {
+                            numNeighbours++;
+                        }
+
+
+                    }
+
+                }
+                if (numNeighbours ==3)
+                {
+                    vect[i][j] = 's';
+                    break;
+                }
+            }
+        }
     }
 
+}

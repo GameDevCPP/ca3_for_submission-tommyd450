@@ -383,7 +383,7 @@ VORBIS_INCLUDE_DIR:PATH=C:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd45
 VORBIS_LIBRARY:FILEPATH=C:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/extlibs/libs-mingw/x64/libvorbis.a
 
 //Dependencies for the target
-lib_engine_LIB_DEPENDS:STATIC=general;lib_tile_level_loader;general;lib_maths;general;lib_ecm;general;Box2D;general;sfml-graphics;general;sfml-audio;
+lib_engine_LIB_DEPENDS:STATIC=general;lib_tile_level_loader;general;lib_maths;general;lib_ecm;general;Box2D;general;sfml-graphics;general;sfml-audio;general;cellAuto;
 
 //Dependencies for the target
 lib_tile_level_loader_LIB_DEPENDS:STATIC=general;sfml-graphics;

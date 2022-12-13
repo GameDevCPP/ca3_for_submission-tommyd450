@@ -59,33 +59,33 @@ build copy_resources: phony CMakeFiles/copy_resources
 #############################################
 # Order-only phony target for lib_engine
 
-build cmake_object_order_depends_target_lib_engine: phony || cmake_object_order_depends_target_Box2D cmake_object_order_depends_target_lib_ecm cmake_object_order_depends_target_lib_tile_level_loader cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window
+build cmake_object_order_depends_target_lib_engine: phony || cmake_object_order_depends_target_Box2D cmake_object_order_depends_target_cellAuto cmake_object_order_depends_target_lib_ecm cmake_object_order_depends_target_lib_tile_level_loader cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window
 
 build CMakeFiles/lib_engine.dir/engine/engine.cpp.obj: CXX_COMPILER__lib_engine_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine/engine.cpp || cmake_object_order_depends_target_lib_engine
   DEP_FILE = CMakeFiles\lib_engine.dir\engine\engine.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\lib_engine.dir
   OBJECT_FILE_DIR = CMakeFiles\lib_engine.dir\engine
 
 build CMakeFiles/lib_engine.dir/engine/system_physics.cpp.obj: CXX_COMPILER__lib_engine_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine/system_physics.cpp || cmake_object_order_depends_target_lib_engine
   DEP_FILE = CMakeFiles\lib_engine.dir\engine\system_physics.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\lib_engine.dir
   OBJECT_FILE_DIR = CMakeFiles\lib_engine.dir\engine
 
 build CMakeFiles/lib_engine.dir/engine/system_renderer.cpp.obj: CXX_COMPILER__lib_engine_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine/system_renderer.cpp || cmake_object_order_depends_target_lib_engine
   DEP_FILE = CMakeFiles\lib_engine.dir\engine\system_renderer.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\lib_engine.dir
   OBJECT_FILE_DIR = CMakeFiles\lib_engine.dir\engine
 
 build CMakeFiles/lib_engine.dir/engine/system_resources.cpp.obj: CXX_COMPILER__lib_engine_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine/system_resources.cpp || cmake_object_order_depends_target_lib_engine
   DEP_FILE = CMakeFiles\lib_engine.dir\engine\system_resources.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\lib_engine.dir
   OBJECT_FILE_DIR = CMakeFiles\lib_engine.dir\engine
 
@@ -97,7 +97,7 @@ build CMakeFiles/lib_engine.dir/engine/system_resources.cpp.obj: CXX_COMPILER__l
 #############################################
 # Link the static library liblib_engine.a
 
-build liblib_engine.a: CXX_STATIC_LIBRARY_LINKER__lib_engine_Debug CMakeFiles/lib_engine.dir/engine/engine.cpp.obj CMakeFiles/lib_engine.dir/engine/system_physics.cpp.obj CMakeFiles/lib_engine.dir/engine/system_renderer.cpp.obj CMakeFiles/lib_engine.dir/engine/system_resources.cpp.obj || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll liblib_ecm.a liblib_tile_level_loader.a
+build liblib_engine.a: CXX_STATIC_LIBRARY_LINKER__lib_engine_Debug CMakeFiles/lib_engine.dir/engine/engine.cpp.obj CMakeFiles/lib_engine.dir/engine/system_physics.cpp.obj CMakeFiles/lib_engine.dir/engine/system_renderer.cpp.obj CMakeFiles/lib_engine.dir/engine/system_resources.cpp.obj || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll libcellAuto.a liblib_ecm.a liblib_tile_level_loader.a
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\lib_engine.dir
   POST_BUILD = cd .
@@ -170,123 +170,154 @@ build liblib_ecm.a: CXX_STATIC_LIBRARY_LINKER__lib_ecm_Debug CMakeFiles/lib_ecm.
   TARGET_PDB = lib_ecm.a.dbg
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target cellAuto
+
+
+#############################################
+# Order-only phony target for cellAuto
+
+build cmake_object_order_depends_target_cellAuto: phony || CMakeFiles/cellAuto.dir
+
+build CMakeFiles/cellAuto.dir/cellAuto/cellularAutomata.cpp.obj: CXX_COMPILER__cellAuto_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto/cellularAutomata.cpp || cmake_object_order_depends_target_cellAuto
+  DEP_FILE = CMakeFiles\cellAuto.dir\cellAuto\cellularAutomata.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  OBJECT_DIR = CMakeFiles\cellAuto.dir
+  OBJECT_FILE_DIR = CMakeFiles\cellAuto.dir\cellAuto
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target cellAuto
+
+
+#############################################
+# Link the static library libcellAuto.a
+
+build libcellAuto.a: CXX_STATIC_LIBRARY_LINKER__cellAuto_Debug CMakeFiles/cellAuto.dir/cellAuto/cellularAutomata.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\cellAuto.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libcellAuto.a
+  TARGET_PDB = cellAuto.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Caver
 
 
 #############################################
 # Order-only phony target for Caver
 
-build cmake_object_order_depends_target_Caver: phony || cmake_object_order_depends_target_Box2D cmake_object_order_depends_target_lib_ecm cmake_object_order_depends_target_lib_engine cmake_object_order_depends_target_lib_tile_level_loader cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window copy_resources copy_resources_rootdir
+build cmake_object_order_depends_target_Caver: phony || cmake_object_order_depends_target_Box2D cmake_object_order_depends_target_cellAuto cmake_object_order_depends_target_lib_ecm cmake_object_order_depends_target_lib_engine cmake_object_order_depends_target_lib_tile_level_loader cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window copy_resources copy_resources_rootdir
 
 build CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_actor_movement.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/components/cmp_actor_movement.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\components\cmp_actor_movement.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\components
 
 build CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_bullet.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/components/cmp_bullet.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\components\cmp_bullet.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\components
 
 build CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_enemy_ai.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/components/cmp_enemy_ai.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\components\cmp_enemy_ai.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\components
 
 build CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_enemy_turret.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/components/cmp_enemy_turret.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\components\cmp_enemy_turret.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\components
 
 build CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_hut_player.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/components/cmp_hut_player.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\components\cmp_hut_player.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\components
 
 build CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_item.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/components/cmp_item.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\components\cmp_item.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\components
 
 build CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_item_jetpack.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/components/cmp_item_jetpack.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\components\cmp_item_jetpack.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\components
 
 build CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_physics.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/components/cmp_physics.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\components\cmp_physics.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\components
 
 build CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_player_physics.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/components/cmp_player_physics.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\components\cmp_player_physics.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\components
 
 build CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_sprite.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/components/cmp_sprite.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\components\cmp_sprite.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\components
 
 build CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_text.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/components/cmp_text.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\components\cmp_text.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\components
 
 build CMakeFiles/Caver.dir/CaverAllIHad/platformer_main.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/platformer_main.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\platformer_main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad
 
 build CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_level1.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/scenes/scene_level1.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\scenes\scene_level1.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\scenes
 
 build CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_level2.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/scenes/scene_level2.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\scenes\scene_level2.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\scenes
 
 build CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_level3.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/scenes/scene_level3.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\scenes\scene_level3.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\scenes
 
 build CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_menu.cpp.obj: CXX_COMPILER__Caver_Debug C$:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/CaverAllIHad/scenes/scene_menu.cpp || cmake_object_order_depends_target_Caver
   DEP_FILE = CMakeFiles\Caver.dir\CaverAllIHad\scenes\scene_menu.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm
+  INCLUDES = -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/engine -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/SYSTEM -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/b2d/Box2D -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_tile_level_loader -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_maths -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib/sfml/include -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/lib_ecm -IC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cellAuto
   OBJECT_DIR = CMakeFiles\Caver.dir
   OBJECT_FILE_DIR = CMakeFiles\Caver.dir\CaverAllIHad\scenes
 
@@ -298,9 +329,9 @@ build CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_menu.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable bin\Caver.exe
 
-build bin/Caver.exe: CXX_EXECUTABLE_LINKER__Caver_Debug CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_actor_movement.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_bullet.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_enemy_ai.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_enemy_turret.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_hut_player.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_item.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_item_jetpack.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_physics.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_player_physics.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_sprite.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_text.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/platformer_main.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_level1.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_level2.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_level3.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_menu.cpp.obj | liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a Build/bin/libBox2D.a lib/sfml/lib/libsfml-graphics-d.a lib/sfml/lib/libsfml-window-d.a lib/sfml/lib/libsfml-audio-d.a lib/sfml/lib/libsfml-system-d.a || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll copy_resources copy_resources_rootdir liblib_ecm.a liblib_engine.a liblib_tile_level_loader.a
+build bin/Caver.exe: CXX_EXECUTABLE_LINKER__Caver_Debug CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_actor_movement.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_bullet.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_enemy_ai.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_enemy_turret.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_hut_player.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_item.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_item_jetpack.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_physics.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_player_physics.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_sprite.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/components/cmp_text.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/platformer_main.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_level1.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_level2.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_level3.cpp.obj CMakeFiles/Caver.dir/CaverAllIHad/scenes/scene_menu.cpp.obj | liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a Build/bin/libBox2D.a lib/sfml/lib/libsfml-graphics-d.a lib/sfml/lib/libsfml-window-d.a lib/sfml/lib/libsfml-audio-d.a lib/sfml/lib/libsfml-system-d.a libcellAuto.a || Build/bin/libBox2D.a bin/sfml-audio-d-2.dll bin/sfml-graphics-d-2.dll bin/sfml-system-d-2.dll bin/sfml-window-d-2.dll copy_resources copy_resources_rootdir libcellAuto.a liblib_ecm.a liblib_engine.a liblib_tile_level_loader.a
   FLAGS = -g
-  LINK_LIBRARIES = liblib_engine.a  liblib_tile_level_loader.a  liblib_ecm.a  Build/bin/libBox2D.a  lib/sfml/lib/libsfml-graphics-d.a  lib/sfml/lib/libsfml-window-d.a  lib/sfml/lib/libsfml-audio-d.a  lib/sfml/lib/libsfml-system-d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = liblib_engine.a  liblib_tile_level_loader.a  liblib_ecm.a  Build/bin/libBox2D.a  lib/sfml/lib/libsfml-graphics-d.a  lib/sfml/lib/libsfml-window-d.a  lib/sfml/lib/libsfml-audio-d.a  lib/sfml/lib/libsfml-system-d.a  libcellAuto.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cmake-build-debug/lib/sfml/lib
   OBJECT_DIR = CMakeFiles\Caver.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Users\Tommy\CLionProjects\ca3_for_submission-tommyd450\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -E copy_directory C:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cmake-build-debug/lib/sfml/ C:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cmake-build-debug/bin"
@@ -2354,6 +2385,8 @@ build Caver: phony bin/Caver.exe
 
 build Caver.exe: phony bin/Caver.exe
 
+build cellAuto: phony libcellAuto.a
+
 build libBox2D.a: phony Build/bin/libBox2D.a
 
 build lib_ecm: phony liblib_ecm.a
@@ -2394,7 +2427,7 @@ build sfml-window-d-2.dll: phony bin/sfml-window-d-2.dll
 #############################################
 # Folder: C:/Users/Tommy/CLionProjects/ca3_for_submission-tommyd450/cmake-build-debug
 
-build all: phony copy_resources_rootdir copy_resources liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a bin/Caver.exe
+build all: phony copy_resources_rootdir copy_resources liblib_engine.a liblib_tile_level_loader.a liblib_ecm.a libcellAuto.a bin/Caver.exe
 
 # =============================================================================
 

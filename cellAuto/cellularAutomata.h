@@ -17,6 +17,8 @@ namespace CA
 
             static void noiseGeneration();
             static void unNaturalSelection();
+            static void fill();
+            static void determineSpawns();
         };
 
 }

@@ -54,7 +54,7 @@ void LevelSystem::loadLevelFile(const std::string& path, float tileSize) {
       if (w == 0) {  // if we haven't written width yet
         w = i;       // set width
       } else if (w != (widthCheck - 1)) {
-        throw string("non uniform width:" + to_string(h) + " ") + path;
+        //throw string("non uniform width:" + to_string(h) + " ") + path;
       }
       widthCheck = 0;
       h++; // increment height
@@ -65,7 +65,7 @@ void LevelSystem::loadLevelFile(const std::string& path, float tileSize) {
   }
 
   if (temp_tiles.size() != (w * h)) {
-    throw string("Can't parse level file") + path;
+    //throw string("Can't parse level file") + path;
   }
   _tiles = std::make_unique<Tile[]>(w * h);
   _width = w; // set static class vars
@@ -179,7 +179,7 @@ void LevelSystem::render(RenderWindow& window) {
 
 LevelSystem::Tile LevelSystem::getTile(sf::Vector2ul p) {
   if (p.x > _width || p.y > _height) {
-    throw string("Tile out of range: ") + to_string(p.x) + "," +
+    //throw string("Tile out of range: ") + to_string(p.x) + "," +
         to_string(p.y) + ")";
   }
   return _tiles[(p.y * _width) + p.x];
@@ -207,7 +207,7 @@ std::vector<sf::Vector2ul> LevelSystem::findTiles(LevelSystem::Tile type) {
 LevelSystem::Tile LevelSystem::getTileAt(Vector2f v) {
   auto a = v - _offset;
   if (a.x < 0 || a.y < 0) {
-    throw string("Tile out of range ");
+    //throw string("Tile out of range ");
   }
   return getTile(Vector2ul((v - _offset) / (_tileSize)));
 }

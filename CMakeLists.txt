@@ -46,7 +46,7 @@ file(GLOB_RECURSE RESOURCE_FILES "res/*.*")
 file(GLOB_RECURSE SOURCE_FILES engine/*.cpp engine/*.h)
 add_library(lib_engine STATIC ${SOURCE_FILES} ${RESOURCE_FILES})
 target_include_directories(lib_engine INTERFACE "${CMAKE_SOURCE_DIR}/engine/" PUBLIC SYSTEM ${B2D_INCS} )
-target_link_libraries(lib_engine lib_tile_level_loader lib_maths lib_ecm Box2D sfml-graphics sfml-audio)
+target_link_libraries(lib_engine lib_tile_level_loader lib_maths lib_ecm Box2D sfml-graphics sfml-audio cellAuto)
 
 ## Maths lib
 add_library(lib_maths INTERFACE)
@@ -64,6 +64,12 @@ file(GLOB_RECURSE SOURCE_FILES lib_ecm/*.cpp lib_ecm/*.h)
 add_library(lib_ecm STATIC ${SOURCE_FILES})
 target_include_directories(lib_ecm INTERFACE "${CMAKE_SOURCE_DIR}/lib_ecm" )
 target_link_libraries(lib_ecm PRIVATE lib_maths)
+
+## CellAuto Library
+file(GLOB_RECURSE SOURCE_FILES cellAuto/*.cpp cellAuto/*.h)
+add_library(cellAuto STATIC ${SOURCE_FILES})
+target_include_directories(cellAuto INTERFACE "${CMAKE_SOURCE_DIR}/cellAuto" )
+
 
 #### Add Practical Projects####
 
