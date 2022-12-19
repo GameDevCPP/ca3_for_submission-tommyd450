@@ -80,10 +80,9 @@ namespace CA {
                 if (vect[i][j] == 'w' && numNeighbours < 3) {
                     vect[i][j] = ' ';
                 }
-                if (vect[i][j] == ' ' && numNeighbours >4) {
+                else if (vect[i][j] == ' ' && numNeighbours >4) {
                     vect[i][j] = 'w';
                 }
-
 
             }
         }
@@ -124,19 +123,18 @@ namespace CA {
                         }
                         //cout << numNeighbours << endl;
 
-                        if (vect[i][j] == 'w' && numNeighbours < 3) {
-                            vect[i][j] = ' ';
-                        }
+                    if (vect[i][j] == 'w' && numNeighbours < 3) {
+                        vect[i][j] = ' ';
+                    }
+                    else if (vect[i][j] == ' ' && numNeighbours >4) {
+                        vect[i][j] = 'w';
+                    }
 
-                        if (vect[i][j] == ' ' && numNeighbours >4) {
-                            vect[i][j] = 'w';
-                        }
                 }
 
             }
-            for(int i = 0; i < 5; i++)
-            {
-             fill();
+            for(int i = 0; i < 2; i++){
+                fill();
             }
 
 
