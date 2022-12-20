@@ -4,16 +4,20 @@
 #include "../components/cmp_hurt_player.h"
 #include "../components/cmp_physics.h"
 #include "../components/cmp_player_physics.h"
+
 #include "../game.h"
+
 #include <LevelSystem.h>
 #include <iostream>
 using namespace std;
 using namespace sf;
 
 static shared_ptr<Entity> player;
+
+
 void Level2Scene::Load() {
   cout << "Scene 2 Load" << endl;
-  ls::loadLevelFile("res/level_2.txt", 40.0f);
+  ls::loadLevelFile("../bin/res/levels/level_2.txt", 40.0f);
   auto ho = Engine::getWindowSize().y - (ls::getHeight() * 40.f);
   ls::setOffset(Vector2f(0, ho));
 
@@ -40,6 +44,7 @@ void Level2Scene::Load() {
 
   // Create Enemy
   {
+
     auto enemy = makeEntity();
     enemy->setPosition(ls::getTilePosition(ls::findTiles(ls::ENEMY)[0]) +
                        Vector2f(0, 24));
@@ -53,7 +58,7 @@ void Level2Scene::Load() {
 
 
     // Add EnemyAIComponent
-    enemy->addComponent<EnemyAIComponent>();
+    enemy->addComponent<EnemyAIComponent>(player);
     // *********************************
   }
 
