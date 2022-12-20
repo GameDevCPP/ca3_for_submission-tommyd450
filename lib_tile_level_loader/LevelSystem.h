@@ -22,6 +22,7 @@ public:
     START = 's',
     END = 'e',
     WALL = 'w',
+    KEY = 'k',
     ENEMY = 'n',
     WAYPOINT = '+'
   };

@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(Games_Engineering)
 
-#### setup Directories ####
+#### setup Directories ###
 #Main output directory
 set(OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin/")
 # Ouput all DLLs from all libs into main build folder
@@ -79,7 +79,7 @@ target_include_directories(cellAuto INTERFACE "${CMAKE_SOURCE_DIR}/cellAuto" )
 file(GLOB_RECURSE SOURCES CaverAllIHad/*.cpp )
 file(GLOB_RECURSE CMPNTS CaverAllIHad/components/*.cpp )
 file(GLOB_RECURSE SCENES CaverAllIHad/scenes/*.cpp )
-add_executable(Caver ${SOURCES} ${RESOURCE_FILES})
+add_executable(Caver ${SOURCES} ${RESOURCE_FILES} CaverAllIHad/components/cmp_key.h CaverAllIHad/components/cmp_key.cpp CaverAllIHad/components/cmp_KeyTracker.cpp CaverAllIHad/components/cmp_KeyTracker.h)
 source_group("components" FILES ${CMPNTS})
 source_group("resources" FILES ${RESOURCE_FILES})
 #target_include_directories(PRACTICAL_6_PLATFORMER SYSTEM PRIVATE ${SFML_INCS} ${B2D_INCS})

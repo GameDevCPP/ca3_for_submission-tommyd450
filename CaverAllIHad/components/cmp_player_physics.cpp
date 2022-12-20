@@ -70,8 +70,7 @@ void PlayerPhysicsComponent::update(double dt) {
 
 
     //cout << dt <<endl;
-    if(std::find(_parent->getComponents().begin(),_parent->getComponents().end(),shared_ptr<ItemJetpackComponent>())!= _parent->getComponents().end())
-    {
+
         if (Keyboard::isKeyPressed(Keyboard::Space) && prevDT <1) {
             //cout<<prevDT;
             prevDT += dt;
@@ -84,7 +83,7 @@ void PlayerPhysicsComponent::update(double dt) {
 
             setVelocity(Vector2f (getVelocity().x,getVelocity().y));
         }
-    }
+
 
 
 

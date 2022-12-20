@@ -23,7 +23,7 @@ void EnemyAIComponent::createRoute()
     auto tiles = ls::findTiles(ls::EMPTY);
     vector<Vector2<size_t>> current = ls::findTiles(ls::getTileAt(_parent->getPosition()));
 
-    cout << ls::getTilePosition(start).x;
+    //cout << ls::getTilePosition(start.loc).x;
     vector<Vector2ul> cList;
     vector<Vector2ul> oList;
     oList.push_back(start);

@@ -4,6 +4,7 @@
 #include "../components/cmp_hurt_player.h"
 #include "../components/cmp_physics.h"
 #include "../components/cmp_player_physics.h"
+#include "../components/cmp_key.h"
 
 #include "../game.h"
 
@@ -13,7 +14,7 @@ using namespace std;
 using namespace sf;
 
 static shared_ptr<Entity> player;
-
+shared_ptr<KeyTracker> kt;
 
 void Level2Scene::Load() {
   cout << "Scene 2 Load" << endl;
@@ -40,6 +41,7 @@ void Level2Scene::Load() {
     // *********************************
     player->addTag("player");
     player->addComponent<PlayerPhysicsComponent>(Vector2f(20.f, 30.f));
+    kt = player->addComponent<KeyTracker>();
   }
 
   // Create Enemy
@@ -74,6 +76,13 @@ void Level2Scene::Load() {
     turret->addComponent<EnemyTurretComponent>();
   }
 
+    auto key = makeEntity();
+    key->setPosition(ls::getTilePosition(ls::findTiles('k')[0]));
+    auto o = key->addComponent<ShapeComponent>();
+    o->setShape<sf::CircleShape>(8.f,3);
+    o->getShape().setFillColor(Color::Yellow);
+    key->addComponent<KeyItemComponent>(player,kt);
+
   // Add physics colliders to level tiles.
   {
     // *********************************
@@ -105,7 +114,7 @@ void Level2Scene::UnLoad() {
 void Level2Scene::Update(const double& dt) {
   Scene::Update(dt);
   const auto pp = player->getPosition();
-  if (ls::getTileAt(pp) == ls::END) {
+  if (ls::getTileAt(pp) == ls::END && kt->keysCollected ==1) {
     Engine::ChangeScene((Scene*)&level3);
   } else if (!player->isAlive()) {
     Engine::ChangeScene((Scene*)&level2);
