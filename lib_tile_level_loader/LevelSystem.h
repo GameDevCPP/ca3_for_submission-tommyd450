@@ -22,6 +22,7 @@ public:
     START = 's',
     END = 'e',
     WALL = 'w',
+    KEY = 'k',
     ENEMY = 'n',
     WAYPOINT = '+'
   };
@@ -50,9 +51,9 @@ public:
 
   static float getTileSize();
 
+    static std::unique_ptr<Tile[]> _tiles;
 protected:
-  static std::unique_ptr<Tile[]> _tiles;
-  static size_t _width;
+    static size_t _width;
   static size_t _height;
   static sf::Vector2f _offset;
 

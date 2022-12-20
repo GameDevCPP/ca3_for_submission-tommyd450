@@ -4,16 +4,21 @@
 #include "../components/cmp_hurt_player.h"
 #include "../components/cmp_physics.h"
 #include "../components/cmp_player_physics.h"
+#include "../components/cmp_key.h"
+
 #include "../game.h"
+
 #include <LevelSystem.h>
 #include <iostream>
 using namespace std;
 using namespace sf;
 
 static shared_ptr<Entity> player;
+shared_ptr<KeyTracker> kt;
+
 void Level2Scene::Load() {
   cout << "Scene 2 Load" << endl;
-  ls::loadLevelFile("res/level_2.txt", 40.0f);
+  ls::loadLevelFile("../bin/res/levels/level_2.txt", 40.0f);
   auto ho = Engine::getWindowSize().y - (ls::getHeight() * 40.f);
   ls::setOffset(Vector2f(0, ho));
 
@@ -36,10 +41,12 @@ void Level2Scene::Load() {
     // *********************************
     player->addTag("player");
     player->addComponent<PlayerPhysicsComponent>(Vector2f(20.f, 30.f));
+    kt = player->addComponent<KeyTracker>();
   }
 
   // Create Enemy
   {
+
     auto enemy = makeEntity();
     enemy->setPosition(ls::getTilePosition(ls::findTiles(ls::ENEMY)[0]) +
                        Vector2f(0, 24));
@@ -53,7 +60,7 @@ void Level2Scene::Load() {
 
 
     // Add EnemyAIComponent
-    enemy->addComponent<EnemyAIComponent>();
+    enemy->addComponent<EnemyAIComponent>(player);
     // *********************************
   }
 
@@ -68,6 +75,13 @@ void Level2Scene::Load() {
     s->getShape().setOrigin(Vector2f(16.f, 16.f));
     turret->addComponent<EnemyTurretComponent>();
   }
+
+    auto key = makeEntity();
+    key->setPosition(ls::getTilePosition(ls::findTiles('k')[0]));
+    auto o = key->addComponent<ShapeComponent>();
+    o->setShape<sf::CircleShape>(8.f,3);
+    o->getShape().setFillColor(Color::Yellow);
+    key->addComponent<KeyItemComponent>(player,kt);
 
   // Add physics colliders to level tiles.
   {
@@ -100,7 +114,7 @@ void Level2Scene::UnLoad() {
 void Level2Scene::Update(const double& dt) {
   Scene::Update(dt);
   const auto pp = player->getPosition();
-  if (ls::getTileAt(pp) == ls::END) {
+  if (ls::getTileAt(pp) == ls::END && kt->keysCollected ==1) {
     Engine::ChangeScene((Scene*)&level3);
   } else if (!player->isAlive()) {
     Engine::ChangeScene((Scene*)&level2);
