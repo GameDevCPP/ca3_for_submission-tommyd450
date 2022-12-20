@@ -14,7 +14,7 @@ using namespace std;
 using namespace sf;
 
 static shared_ptr<Entity> player;
-shared_ptr<KeyTracker> kt;
+static shared_ptr<KeyTracker> kt;
 
 void Level2Scene::Load() {
   cout << "Scene 2 Load" << endl;
@@ -107,12 +107,17 @@ void Level2Scene::Load() {
 void Level2Scene::UnLoad() {
   cout << "Scene 2 UnLoad" << endl;
   player.reset();
+  kt.reset();
   ls::unload();
   Scene::UnLoad();
 }
 
 void Level2Scene::Update(const double& dt) {
+
   Scene::Update(dt);
+    sf::View view1(sf::FloatRect(600.f, 1200.f, 2000.f, 1000.f));
+    view1.setCenter(player->getPosition().x,player->getPosition().y);
+    Engine::GetWindow().setView(view1);
   const auto pp = player->getPosition();
   if (ls::getTileAt(pp) == ls::END && kt->keysCollected ==1) {
     Engine::ChangeScene((Scene*)&level3);

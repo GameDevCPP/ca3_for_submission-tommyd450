@@ -162,46 +162,94 @@ namespace CA {
 
 
     void CellularAutomataGen::determineSpawns() {
+        bool spawnFound = false;
+        bool exitPlaced = false;
+
         for (int i = 0; i < width - 1; i++) {
 
             for (int j = 0; j < height - 1; j++) {
                 int numNeighbours = 0;
                 if (vect[i][j] == ' ') {
-                    {
-                        // Three Cells above ie . NW, N, NE
-                        if (i != 0 && j > 0 && vect[i][j - 1] == 'w') {
-                            numNeighbours++;
-                        }
-                        if (i > 0 && j > 0 && vect[i - 1][j - 1] == 'w') {
-                            numNeighbours++;
-                        }
-                        if (i > 0 && j > 0 && i < height && vect[i + 1][j - 1] == 'w') {
-                            numNeighbours++;
-                        }
-                        // Cells to the left and right ie. West and East
-                        if (i != 0 && j > 0 && vect[i - 1][j] == 'w') {
-                            numNeighbours++;
-                        }
-                        if (i != 0 && j > 0 && i < height && vect[i + 1][j] == 'w') {
-                            numNeighbours++;
-                        }
-                        //Cells below ie SW, S , SE
-                        if (i != 0 && j > 0 && j < width && vect[i][j + 1] == 'w') {
-                            numNeighbours++;
-                        }
-                        if (i != 0 && j > 0 && i < height && j < width && vect[i + 1][j + 1] == 'w') {
-                            numNeighbours++;
-                        }
-                        if (i != 0 && j > 0 && j < width && vect[i - 1][j + 1] == 'w') {
-                            numNeighbours++;
-                        }
 
-
+                    // Three Cells above ie . NW, N, NE
+                    if (i != 0 && j > 0 && vect[i][j - 1] == 'w') {
+                        numNeighbours++;
                     }
-
+                    if (i > 0 && j > 0 && vect[i - 1][j - 1] == 'w') {
+                        numNeighbours++;
+                    }
+                    if (i > 0 && j > 0 && i < height && vect[i + 1][j - 1] == 'w') {
+                        numNeighbours++;
+                    }
+                    // Cells to the left and right ie. West and East
+                    if (i != 0 && j > 0 && vect[i - 1][j] == 'w') {
+                        numNeighbours++;
+                    }
+                    if (i != 0 && j > 0 && i < height && vect[i + 1][j] == 'w') {
+                        numNeighbours++;
+                    }
+                    //Cells below ie SW, S , SE
+                    if (i != 0 && j > 0 && j < width && vect[i][j + 1] == 'w') {
+                        numNeighbours++;
+                    }
+                    if (i != 0 && j > 0 && i < height && j < width && vect[i + 1][j + 1] == 'w') {
+                        numNeighbours++;
+                    }
+                    if (i != 0 && j > 0 && j < width && vect[i - 1][j + 1] == 'w') {
+                        numNeighbours++;
+                    }
                 }
+
+                if (numNeighbours >=6)
+                {
+
+                    vect[i][j] = 'k';
+                }
+                if (numNeighbours ==5 && exitPlaced == false)
+                {
+                    exitPlaced = true;
+                    vect[i][j] = 'e';
+                }
+            }
+        }
+        for (int i = 0; i < width - 1; i++) {
+
+            for (int j = 0; j < height - 1; j++) {
+                int numNeighbours = 0;
+                if (vect[i][j] == ' '&&spawnFound== false) {
+
+                    // Three Cells above ie . NW, N, NE
+                    if (i != 0 && j > 0 && vect[i][j - 1] == 'w') {
+                        numNeighbours++;
+                    }
+                    if (i > 0 && j > 0 && vect[i - 1][j - 1] == 'w') {
+                        numNeighbours++;
+                    }
+                    if (i > 0 && j > 0 && i < height && vect[i + 1][j - 1] == 'w') {
+                        numNeighbours++;
+                    }
+                    // Cells to the left and right ie. West and East
+                    if (i != 0 && j > 0 && vect[i - 1][j] == 'w') {
+                        numNeighbours++;
+                    }
+                    if (i != 0 && j > 0 && i < height && vect[i + 1][j] == 'w') {
+                        numNeighbours++;
+                    }
+                    //Cells below ie SW, S , SE
+                    if (i != 0 && j > 0 && j < width && vect[i][j + 1] == 'w') {
+                        numNeighbours++;
+                    }
+                    if (i != 0 && j > 0 && i < height && j < width && vect[i + 1][j + 1] == 'w') {
+                        numNeighbours++;
+                    }
+                    if (i != 0 && j > 0 && j < width && vect[i - 1][j + 1] == 'w') {
+                        numNeighbours++;
+                    }
+                }
+
                 if (numNeighbours ==3)
                 {
+                    spawnFound = true;
                     vect[i][j] = 's';
                     break;
                 }
