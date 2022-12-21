@@ -152,7 +152,7 @@ namespace CA {
 
                 }
                 current += "\n";
-                cout << current << endl;
+                //cout << current << endl;
             }
             std::ofstream out("../bin/res/levels/output.txt");
             out << current;

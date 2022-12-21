@@ -21,7 +21,7 @@ void Level1Scene::Load() {
     CellularAutomataGen::unNaturalSelection();
 
   cout << " Scene 1 Load" << endl;
-  ls::loadLevelFile("../bin/res/levels/output.txt", 40.0f);
+  ls::loadLevelFile("../bin/res/levels/level_2.txt", 40.0f);
 
   auto ho = Engine::getWindowSize().y - (ls::getHeight() * 40.f);
   ls::setOffset(Vector2f(0, ho));
@@ -32,6 +32,7 @@ void Level1Scene::Load() {
     player = makeEntity();
 
     player->setPosition(ls::getTilePosition(ls::findTiles(ls::START)[0]));
+    cout<<player->getPosition()<<endl;
 
     auto s = player->addComponent<ShapeComponent>();
     s->setShape<sf::RectangleShape>(Vector2f(20.f, 30.f));

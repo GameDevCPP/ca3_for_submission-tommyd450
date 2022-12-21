@@ -3,6 +3,7 @@
 #include "system_physics.h"
 #include <LevelSystem.h>
 #include <SFML/Window/Keyboard.hpp>
+#include "cmp_ai_astar.h"
 
 using namespace std;
 using namespace sf;
@@ -35,7 +36,8 @@ bool PlayerPhysicsComponent::isGrounded() const {
 void PlayerPhysicsComponent::update(double dt) {
 
   const auto pos = _parent->getPosition();
-
+    //cout<<ls::getTilePosition(Vector2ul((pos-ls::getOffset()) / (ls::getTileSize())))<<endl;
+    //cout<<ls::getTilePosition(Vector2ul(pos.x,pos.y))<<endl;
   //Teleport to start if we fall off map.
   if (pos.y > ls::getHeight() * ls::getTileSize()) {
     teleport(ls::getTilePosition(ls::findTiles(ls::START)[0]));
@@ -119,4 +121,10 @@ PlayerPhysicsComponent::PlayerPhysicsComponent(Entity* p,
   _body->SetFixedRotation(true);
   //Bullet items have higher-res collision detection
   _body->SetBullet(true);
+  astarAi astar = astarAi();
+  astar.createGraph();
+  Vector2f b = _parent->getPosition();
+  cout<< b << endl;
+  b = ls::getTilePosition(Vector2ul((b-ls::getOffset()) / (ls::getTileSize())));
+ astar.createRoute(Vector2f(1200,680),Vector2f(1000,560));
 }

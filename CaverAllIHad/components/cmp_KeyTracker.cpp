@@ -3,12 +3,12 @@
 
 void KeyTracker::update(double dt)
 {
-    std::cout<<keysCollected<<std::endl;
+    //std::cout<<keysCollected<<std::endl;
 }
 
 
 
 KeyTracker::KeyTracker(Entity *p)  : Component(p)
 {
-
+    keysCollected =0;
 }

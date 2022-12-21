@@ -204,13 +204,17 @@ std::vector<sf::Vector2ul> LevelSystem::findTiles(LevelSystem::Tile type) {
   return v;
 }
 
+
 LevelSystem::Tile LevelSystem::getTileAt(Vector2f v) {
-  auto a = v - _offset;
-  if (a.x < 0 || a.y < 0) {
-    //throw string("Tile out of range ");
-  }
-  return getTile(Vector2ul((v - _offset) / (_tileSize)));
+    auto a = v - _offset;
+    if (a.x < 0 || a.y < 0) {
+        //throw string("Tile out of range ");
+    }
+    return getTile(Vector2ul((v - _offset) / (_tileSize)));
 }
+
+//sf::Vector2f LevelSystem::getTileCoorsds
+
 
 bool LevelSystem::isOnGrid(sf::Vector2f v) {
   auto a = v - _offset;
