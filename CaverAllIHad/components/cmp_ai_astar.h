@@ -1,0 +1,8 @@
+//
+// Created by Tommy on 20/12/2022.
+//
+
+#ifndef GAMES_ENGINEERING_CMP_AI_ASTAR_H
+#define GAMES_ENGINEERING_CMP_AI_ASTAR_H
+
+#endif //GAMES_ENGINEERING_CMP_AI_ASTAR_H
