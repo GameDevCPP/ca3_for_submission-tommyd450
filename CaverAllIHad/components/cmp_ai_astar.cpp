@@ -5,110 +5,81 @@
 #include "LevelSystem.h"
 #include "unordered_map"
 #include <queue>
+#include "PathFinder.h"
 
 
 
-double astarAi::heuristic(sf::Vector2f a, sf::Vector2f b) {
-    return std::abs(a.x - b.x) + std::abs(a.y - b.y);
-}
 
-    std::vector<graph> spots;
 
+PathFinder<Square> p;
+Square **squares;
 
 void astarAi::createGraph() {
     auto tiles = ls::findTiles(ls::EMPTY);
-    for (auto i :tiles)
-    {
 
-        //cout<<ls::getTilePosition(Vector2ul((pos-ls::getOffset()) / (ls::getTileSize())))<<endl;
-        graph gr = graph();
-        //gr.coords =  sf::Vector2f(i.x,i.y);
-        sf::Vector2ul pos = sf::Vector2ul (i.x,i.y);
-        gr.coords=ls::getTilePosition(pos);
-        std::cout<<gr.coords<<"new coords"<<std::endl;
-        std::string xKey = std::to_string(gr.coords.x);
-        std::string yKey = std::to_string(gr.coords.y);
-        std::string key = xKey+":"+yKey;
+        //PathFinder<Square> p;
+        std::vector<Square*> path;
+        int width = ls::getWidth();
+        int height = ls::getHeight();
 
 
-        for (auto j : tiles)
+        squares = new Square* [width];
+        for(unsigned short int x = 0; x < width; ++x)
         {
-            sf::Vector2ul pos = sf::Vector2ul (j.x,j.y);
-            sf::Vector2f neighb = ls::getTilePosition(pos);
-            if (i.x +1 == j.x && i.y==j.y)
+            squares[x] = new Square[height];
+            for(unsigned short int y = 0; y < height; ++y)
             {
-                gr.neighbours.push_back(neighb);
-            }
-            if (i.x -1 == j.x && i.y==j.y)
-            {
-                gr.neighbours.push_back(neighb);
-            }
-            if (i.x  == j.x && i.y+1==j.y)
-            {
-                gr.neighbours.push_back(neighb);
-            }
-            if (i.x  == j.x && i.y-1==j.y)
-            {
-                gr.neighbours.push_back(neighb);
-            }
-            if(gr.neighbours.size()==4)
-            {
-                std::cout <<"1st Neighb"<<gr.neighbours[1]<<std::endl;
-                break;
+                sf::Vector2f b = sf::Vector2f (x,y);
+                sf::Vector2f c =  ls::getTilePosition(sf::Vector2ul(b-ls::getOffset() / (ls::getTileSize())));
+                squares[x][y].setPosition(c.x, c.y);
+                squares[x][y].setType(ls::getTile(sf::Vector2ul(b-ls::getOffset() / (ls::getTileSize()))) == ls::TILES::EMPTY ? true : false);
             }
         }
-        std::cout <<gr.neighbours.size()<<std::endl;
-        map[key] = gr;
-        std::cout<<map[key].coords<<"Key" <<key <<std::endl;
-    }
-    //std::cout <<spots.size()<<std::endl;
-    //std::cout<<astarAi::heuristic(sf::Vector2f(0,0),sf::Vector2f(0,1))<<std::endl;
-    //std::cout<<astarAi::heuristic(sf::Vector2f(0,0),sf::Vector2f(1,1))<<std::endl;
-    //std::cout<<astarAi::heuristic(sf::Vector2f(0,0),sf::Vector2f(2,1))<<std::endl;
 
-}
-
-void astarAi::createRoute(sf::Vector2f start,sf::Vector2f target) {
-    if(start != target)
-    {
-        std::vector<sf::Vector2f> frontierG;
-        std::vector<double> frontierC;
-        frontierG.push_back(start);
-        sf::Vector2f current = start;
-        sf::Vector2f low;
-        double lowest = 300000;
-        std::cout<<findGraphNode(current).coords<<"CURRENR"<<std::endl;
-        {
-        for (auto n: findGraphNode(current).neighbours) {
-            std::cout<<"neigh"<<n<<std::endl;
-            double currentVal = heuristic(n,target);
-            if(currentVal<lowest)
+        int newX, newY;
+        Square *aChild;
+        for(int x = 0; x < width; ++x){
+            for(int y = 0; y < height; ++y) // traverse all squares
             {
-                std::cout<<"low";
-                lowest = currentVal;
-                low = n;
+                for(int i = -1; i < 2; ++i)
+                {
+                    newX = squares[x][y].getX() /ls::getWidth()+ i;
+                    for(int j = -1; j < 2; ++j) // for all squares in this 3*3 square
+                    {
+                        newY = squares[x][y].getY() /ls::getWidth()+ j;
+                        if( newX > -1 && newX < width && newY > -1 && newY < height ) // be sure not to go outside the limits
+                        {
+                            sf::Vector2f b = sf::Vector2f (x,y);
+
+                            sf::Vector2f c =  ls::getTilePosition(sf::Vector2ul(b-ls::getOffset() / (ls::getTileSize())));
+                            //std::cout<<ls::getTilePosition(sf::Vector2ul(b-ls::getOffset() / (ls::getTileSize())))<<std::endl;
+                            aChild = &(squares[newX][newY]);
+                            if( aChild->getType() && (newX != x || newY != y) ) // only take free squares and not the one we are examining
+                                squares[x][y].addChild(aChild, squares[x][y].localDistanceTo(aChild));
+                        }
+                    }
+                }
             }
-
         }
-        createRoute(low,target);
-    }
+    p.setStart(squares[0][0]);
+    p.setGoal(squares[10][0]);
+    bool r = p.findPath<AStar>(path);
+    std::cout<<r<<std::endl;
+
 
 }
 
-}
-
-graph astarAi::findGraphNode(sf::Vector2f node)
+std::vector<Square*> astarAi::createAndReturnRoute(sf::Vector2f start,sf::Vector2f target)
 {
-    graph gr;
-    sf::Vector2ul pos = sf::Vector2ul (node.x-40,node.y);
-    sf::Vector2f b =ls::getTilePosition(pos);
-    std::string xKey = std::to_string(b.x);
-    std::string yKey = std::to_string(b.y);
-    std::string key = xKey+":"+yKey;
-   // std::string key2 = "1120.000000:680.000000";
-    gr = map[key];
-    //std::cout<<map[key2].coords<<"Found"<<std::endl;
-    return gr;
+    std::vector<Square*> path;
+
+    p.setStart(squares[(int)start.x/40][((int)start.y/40)+1]);
+    p.setGoal(squares[(int)target.x/40][((int)target.y/40)+1]);
+    bool r = p.findPath<AStar>(path);
+    std::cout<<r<<" In yolk"<<std::endl;
+    return path;
 }
+
+
 
 astarAi::astarAi() {}

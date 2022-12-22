@@ -48,8 +48,7 @@ void Level2Scene::Load() {
   {
 
     auto enemy = makeEntity();
-    enemy->setPosition(ls::getTilePosition(ls::findTiles(ls::ENEMY)[0]) +
-                       Vector2f(0, 24));
+    enemy->setPosition(ls::getTilePosition(ls::findTiles(ls::ENEMY)[0]));
     // *********************************
     // Add HurtComponent
     enemy->addComponent<HurtComponent>();

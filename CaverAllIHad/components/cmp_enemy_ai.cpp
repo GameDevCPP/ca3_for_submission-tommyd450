@@ -1,6 +1,7 @@
 #include "cmp_enemy_ai.h"
 #include "LevelSystem.h"
 #include "cmath"
+#include "cmp_ai_astar.h"
 
 using namespace std;
 using namespace sf;
@@ -35,4 +36,18 @@ EnemyAIComponent::EnemyAIComponent(Entity* p, std::shared_ptr<Entity> player) : 
   _direction = Vector2f(1.0f, 0);
   _speed = 100.0f;
   _player = player;
+    astarAi as = astarAi();
+    Vector2f b = _parent->getPosition();
+    cout<< b << endl;
+    b = ls::getTilePosition(Vector2ul((b-ls::getOffset()) / (ls::getTileSize())));
+    Vector2f c = _player->getPosition();
+    cout<< b << endl;
+    c = ls::getTilePosition(Vector2ul((c-ls::getOffset()) / (ls::getTileSize())));
+    cout<<b<<endl;
+    vector<Square*> path = as.createAndReturnRoute(b,c);
+    for (auto i : path)
+    {
+        cout<<i->getX()<< " "<< i->getY()<<endl;
+    }
+
 }

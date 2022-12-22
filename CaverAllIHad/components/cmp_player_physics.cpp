@@ -122,9 +122,9 @@ PlayerPhysicsComponent::PlayerPhysicsComponent(Entity* p,
   //Bullet items have higher-res collision detection
   _body->SetBullet(true);
   astarAi astar = astarAi();
-  astar.createGraph();
-  Vector2f b = _parent->getPosition();
-  cout<< b << endl;
-  b = ls::getTilePosition(Vector2ul((b-ls::getOffset()) / (ls::getTileSize())));
- astar.createRoute(Vector2f(1200,680),Vector2f(1000,560));
+    Vector2f b = _parent->getPosition();
+    cout<< b << endl;
+    b = ls::getTilePosition(Vector2ul((b-ls::getOffset()) / (ls::getTileSize())));
+    astar.createGraph();
+
 }
