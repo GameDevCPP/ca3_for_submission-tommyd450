@@ -17,8 +17,8 @@ using namespace std;
 
 
 namespace CA {
-    int width = 100;
-    int height = 100;
+    int width = 50;
+    int height = 50;
 
 
     vector<char> row(width, ' ');
@@ -200,7 +200,7 @@ namespace CA {
                     }
                 }
 
-                if (numNeighbours >=6)
+                if (numNeighbours >=4)
                 {
 
                     vect[i][j] = 'k';

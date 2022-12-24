@@ -5,6 +5,7 @@
 #include "../components/cmp_physics.h"
 #include "../components/cmp_player_physics.h"
 #include "../components/cmp_key.h"
+#include "../components/cmp_key_sound.h""
 
 #include "../game.h"
 
@@ -81,7 +82,9 @@ void Level2Scene::Load() {
     auto o = key->addComponent<ShapeComponent>();
     o->setShape<sf::CircleShape>(8.f,3);
     o->getShape().setFillColor(Color::Yellow);
+    key->addComponent<KeySound>(player);
     key->addComponent<KeyItemComponent>(player,kt);
+
 
   // Add physics colliders to level tiles.
   {

@@ -18,7 +18,7 @@ protected:
 	explicit Component(Entity* const p);
 
 public:
-	Component() = delete;
+	Component() = default;
 
 	bool is_fordeletion() const;
 

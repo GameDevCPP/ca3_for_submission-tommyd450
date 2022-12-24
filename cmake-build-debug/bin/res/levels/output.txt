@@ -1,99 +1,49 @@
-                                                                                                   
-  s                                              ww         ww                  ww                 
- wwwww                                 w         wwww       www                 www             ww 
- wwwww                             wwwwww        wwww        www                 w          wwwwww 
- wwwww  ww                      ww wwwwwww       wwwww        www                           wwwww  
- wwwww  wwww ww                 ww  wwwwwww     wwwwwww       www                           wwww   
- wwwww    w www         www    ww   wwwwwww    wwwwwww   wwwewwww                           wwww   
-  wwwww                 wwwwwww    wwwwwwwww   wwwwww    wwwwwwww                          wwwwww  
-   wwwww                 wwwwww     wwwwwwww   wwwwwww  wwwwwwwwww                 ww   wwwwwwwwww 
-    wwwww               wwwwwwww    wwwwwwww  wwwwwwwwwwwwww wwwww                 ww   wwwwwwwwwww
-    wwwwww             wwwwwwwww   wwwwwwwwww  wwwwwwwwwwww   www                 w     wwwwwwwwww 
-   wwwwwwww       ww   wwwwwwww     wwwwwwwww   wwwwwwwwwww   www           w  wwww     wwwwwwwwww 
-    wwwwwww      www    wwwwww       wwwwwwww    wwwwwwwwwwwwwwww          wwwwwwww      wwwwwwwww 
-       wwwww     www    wwwwww          wwwwww   wwwwwwwwwwwwwwww          wwwwwwww      www    w  
-        wwwww          wwwwwwww          wwwwwwwwwwwwwwwwwwwwwwww           wwwwwww     www        
-         wwwww          wwwwwwww         wwwwwwwwwwwwwwwwwwwwwwwww          wwwwwww   wwww         
-          wwww             wwwww           wwwwwwwwwwwwwwwwwwwwww            wwwwww  wwww          
-          www               wwwww          wwwwwwwwwwwwwwwwwwwwww            wwwwww  wwww          
-     ww    ww                wwwwww        wwwwwwwwwwwwwwwwwwwwww             wwwww  wwwww         
-    www      ww              wwwwwww      wwwwwwwwwwwwwwwwwwwwwwww            wwwww   wwwww        
-   wwwww     www             wwwwwww       wwwwwwwwwwwwwwwww  w  w  www      wwwwww   wwww         
-  wwwwwww    www     ww         wwww      wwwwwwwwwwwwwwwww       w www      wwwwww   wwww         
-  wwwwwwww   ww      www         ww    wwwwwwwwwwwwwwwwwwww      ww  www      wwww   wwwwww        
- wwwwwwwww            wwww           wwwwwwwwwwwwwwwwwwwwww    wwww  www       ww  wwwwwwwwww      
- wwwwwwww             wwww           wwwwwwwwwwww   wwwwwwww   wwwwwwwww          wwwwwwwwwwww     
-  wwwwwww     ww       ww            wwwwwwwwwww     wwwwwww   wwwwwwww       ww wwwwwwwwwwwwwwwww 
-  wwwwwww     ww       ww           wwwwwwwwwwww      wwwww   wwwwww          wwwwwwwwww   wwwwwww 
-  wwwwww              wwww     wwwwwwwwwwwwwwwwww     wwwww  wwwwww            wwwwwwww     wwwwww 
- wwwwwww          wwwwwww     wwwwwwwwwwwwwwwwwwww    www    wwww              wwwwwwww      wwwww 
- wwwwwwww        wwwwwwww     wwwwwwwwwwwwwwwwwwwww   ww     www                w   www      wwww  
-  wwwwwww      wwwwwwwwww     wwwwwwwwwwwwwww  wwwww  ww                                     www   
-   wwwwww      wwww   www      wwwwwwwwwwwww    wwww                                        wwww   
-     www        ww     ww         wwwwwwwwww      ww          www                            www   
-                       ww           wwwwwwwww      w          wwww               ww           ww   
-                       ww            wwwwwwww      w          wwwww              ww            ww  
-                       www           wwwwww       www         wwwwww              ww            ww 
-                      www             www        wwww         wwwwwww             www           ww 
-                     wwww                        wwwww         wwwwwww           wwwwww            
-                     wwwww     ww                wwwwww        wwwwww            wwwwwwww          
-                ww    wwwwwwwwwww        ww      wwwww          wwwww            wwwwwwww          
-               www       wwwwwwww      wwwww     wwwww          wwwwww        wwwwwwwwwww          
-               www        www          wwww      wwwwww         wwwwww        wwkwwwwwwwww         
-              www          w     w     wwww     wwwwwwww       wwwwww            wwwwwwwwww        
-             wwww               www   wwwww    wwwwwwwwww      wwwwww            wwwwwwwwwww   ww  
-           wwwwww           ww   ww   wwwwww   wwwwwwwwww     wwwwwwww           wwwwwwwwwwwwwwww  
-         wwwww            wwwww   w    wwww     wwwwwwwwww  wwwwwwwwwww          wwwwwwwwwwwwwwwww 
-         www              wwwww    ww   www       wwww  wwwwwwwwwwwwwwww         wwwwwwwwwwwwwwwww 
-          w               wwwwww  www   www         w    wwwwwwwwwwwwwwww         kwwwwwwwwwwwwwww 
-                ww        wwwwwwwwwwk  w                  wwwwwwwwwwwwwww      w  wwwwwwww  wwwwww 
-                ww  www     wwwwwwwwwwww           ww      wwwwwwwwwwww       wwwwwwwwwww       w  
-                    www      wwwwwwwwwwww        wwww       wwwwwwwwwww        wwwwwwww            
-                     www      wwwwwwwwwwww       wwwww      wwwwwwwwwww        wwwwwww   www       
-           wwww      www       wwwwwwwwwwww     wwwwwww       wwww  wwww        wwwwww  wwww       
-           wwwww      w   ww   wwwwwwwwwwww   wwwwwwwwww       ww    wwww       wwwwww  www        
-            wwwwww       www   wwwwwwww      wwwwwwwwwwww             ww       wwwwwwwwwwww        
-            wwwwww    w  www   wwwwwww       wwwwwwww  ww                     wwwwwwwwwwwww        
-  ww      ww www     www ww     wwwwww       wwwwwww                           wwwwwwwwwwww        
-  ww     ww   w      ww          wwwww        wwwww              ww            wwwwwwwwwwww        
-         w          www           wwwww       wwww       ww     www           wwwwwwwwwwwww        
-                    ww            wwwwww     wwww        ww     wwww           wwwwwwwwwwww        
-                       ww         wwwwww      www                wwww          wwwwwwwwwww         
-              ww      wwww        wwwww       www                 wwww         wwwwwwwwwww    wwwww
-              ww       www        wwwww      wwwww                wwwwwww     wwwwwwwwwwwww  wwwwww
-                                 wwwwwww      wwww                wwwwwww     wwwwwwwwwwwwwwwwwwww 
-                                 wwwwww        wwww               wwwwww      wwwwwwwwwwwwwwwwwww  
-                                wwwwww         wwwww     ww   ww wwwwwww       wwwwwwwwwwwwwwwwww  
-   ww                         wwwwwww           www     www  wwwwwwwwwww       wwwwwwwwwwwwwwwwww  
-   www                        wwwwwww                   wwww  wwwwwwwww     wwwwwwwww  wwwwwwwwww  
-                               wwwwww                   wwww   wwwwwwww     wwwwwwww    wwwwww     
-                               wwwww           ww      wwwww      wwwww     wwwwwww    wwwwww      
-       ww                       www           www      wwwww       wwwww     wwwwww   wwwww      ww
-       wwww                     www       wwwwww       wwwww       w  w        wwww   wwwww      ww
-       wwwwwww                 www        wwww           www      w             ww    wwwwww     ww
-      wwwwwwwww  w             www    wwwwww              w      www                   wwwwww   www
-      wwwwwwwwwwwww           wwww   wwwwww    www              www     wwww           wwwwwww   ww
-  wwwwwwwwwwwwwwwwwww        wwww   wwwwwww    wwww             ww      wwwww       wwwwwwwwww   ww
-  wwwwwwwwwwwwwwwwwww         www  wwwwwwwww     ww                     wwwwww     wwwwwwwwwww   ww
- wwwww   w  wwwwwwwww          ww  wwwwwwwwww     ww   w     ww         wwwwwwww   wwwwwwwwwww   w 
- wwwww       wwwwwwwww             wwwwwwwwww         www  wwww  ww    wwwwwwwwww wwwwwwwwwwww  ww 
- wwwwww  ww  wwwwwwwwww             wwwwwwwww         www  wwww wwwww  wwwwwwww  wwwwwwwwwwwww  ww 
-  wwwwwwwww  wwwwwwwwwww            wwwwwwwwww        www  www   wwww   wwwwww   wwwwwwwwwwwwww    
-   wwwwwwww   wwwwwwwww            wwwwwwwwwwww      wwww   ww   wwwww  www      wwwwwwwwwwwwww    
-    wwwwwww   wwwwwwww              wwwwwwwwwwww   wwwww         wwwww   w        wwwwwwwwwwwwww   
-     wwwwwww  wwwwwww        ww          wwwww    wwwwww         wwwww        ww  wwwwwwwwwwwwwww  
-     wwwwwww   wwwwww       wwww          www     wwwwww           wwww      www   wwwwww  wwwwww  
-       wwwww   wwww         wwwww          ww      wwwww            wwww     www   wwwww    wwwwww 
-         www   www           wwwww         ww       wwwww           wwwww    www  wwwwww     wwwww 
-                w             www         wwww  w  wwwwwww          wwwwwwww ww   wwwww      wwwwww
-   w                           ww     w   www  wwwwwwwwwwww        wwwwwwwww     wwwww    ww  wwwww
-  www                          ww    wwwww     wwwwwwwwwwwww       wwwwwwwww    wwwwww   www    w  
-   ww                         wwww  wwwwww      wwwwwwwwwwww    www   wwwww   wwwwwwwwwwwwww       
-          wwww            ww   wwwwwwwwwww       wwwwwwwww    wwwww     ww    ww   wwwwwwww        
-        wwwwwww          www   wwwwwwwwwwww      wwwwwwww     wwww                  wwwwwww        
-        ww   w          www     wwwwwwwwwww   wwwwwwwwwww      ww                    wwwww         
-                       www      wwwwwwwwwww  wwwwwwwwwwww                            wwwwww    www 
-    wwww               ww        wwwwwwwww  wwwwwwwwwwwww                      ww     wwwwwww wwwww
-   wwwwww  w                      wwwwwww    wwwwwwwwwwww                      ww     wwwwwww  wwww
-   wwwwwwwwww                     wwwwwww     wwwwwwwwwww            www              wwwwwww   www
-    w  wwwwww                      ww          wwwwwww               www              ww   w       
+                                                 
+                       ww                        
+      sw               ww                        
+      www                                        
+      wwww        wk     ww                   www
+      wwww       wwwww   ww                   www
+      kwwwk      kwwww                 w       w 
+       wwww      kwwww                www        
+      kwwwww     wwwwwk               kww        
+      wwwwwww   wwwwwww                wwk       
+     kwwwwwwwekwwwwwwww                  wwwwwk  
+     wwwwwwwwwwwwwwwww                   kwwwwww 
+    wwwwwwwwwwwwwwwww                     wwwwww 
+   wwwk kwwwwwwwwwk                        wwwww 
+  wwwk   kwwwwwwwk                         kwwwwk
+  www     wwwwwwwk                  ww      wwwww
+  www     wwwwwwwwk      ww         www    kwwwww
+  wwk      wwwwwwwwww    www        www    wwwwwk
+  ww        wwwwwwwwww    ww         wwk   wwwww 
+  kk        kwwwwwwwwww              kwwk        
+  ww         wwwwwwwwwww              wwww       
+ www         wwwwwwwwwwk               wwww      
+ wwwk       kwwwwwwwwwwk               kwwww     
+ wwwwk  kwwkwwwwwwwwwwww                wwww     
+ kwwwwwwwwwwwwwwkkwwwk                  kwww     
+  wwwwwwwwwwwwwk                         wwwk    
+  wwwwwwwwwwwww                 ww       wwww    
+  wwwwwwwwwwwww                 www       kwk    
+   wwkkwwwwwwww   wwwwwwww     kwwk          www 
+       kwwwwwww   wwwwwwww     www           www 
+        wwwwwwk    wwwwww      wwwk           ww 
+         wwwww      wwwwk       www              
+    kww   kww       kwww        kw               
+   wwww             kwk     ww  wk               
+  wwwwk            ww       wwwkww               
+ wwwwwk            ww      kwww kww              
+ wwwwww      wwk           www   ww              
+  kwww       wwwww        www    wwk             
+         kw   wwww        ww     www          ww 
+        wwww  kwww                www         www
+        wwwwwkwwww                kwwwk       www
+        wwwwwwwwwk                kwwwwww     wwk
+        wwwwwwwww                kwwwwwwwk   kwwk
+        wwwwwwwwk           wwkkwwwwwwwwww   wwww
+        wwwwwwww           kwwwwwwwwwwwwwww  wwww
+        wwwwwwww           wwwwwwwwwwwwwwww  wwww
+         wwwwwww           wwwwwwwwwwwwwwww   ww 
+          wwwwww            wwwwwwwwwwwwww       
+           wwk               wwwwkkwwwwww        
