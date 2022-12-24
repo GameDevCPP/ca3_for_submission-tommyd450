@@ -3,7 +3,7 @@
 
 void KeyTracker::update(double dt)
 {
-    std::cout<<keysCollected<<std::endl;
+    //std::cout<<keysCollected<<std::endl;
 }
 
 

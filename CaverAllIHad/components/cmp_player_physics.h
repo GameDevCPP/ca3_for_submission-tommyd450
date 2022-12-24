@@ -9,9 +9,10 @@ protected:
   bool _grounded;
   float _groundspeed;
 
-  bool isGrounded() const;
+
 
 public:
+    bool isGrounded() const;
   void update(double dt) override;
 
   explicit PlayerPhysicsComponent(Entity* p, const sf::Vector2f& size);
