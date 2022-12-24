@@ -9,6 +9,11 @@ void PlayerSound::update(double dt)
         load("../bin/res/sound/slime_jump.wav");
         play();
     }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&& _player->get_components<PlayerPhysicsComponent>()[0]->isGrounded()) {
+        load("../bin/res/sound/jetNoise.wav");
+        play();
+
+    }else{};
 
 }
 

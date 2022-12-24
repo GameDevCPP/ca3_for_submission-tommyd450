@@ -18,6 +18,12 @@ void Soundcmp::play()
     sound.play();
 }
 
+void Soundcmp::stop()
+{
+    sound.setBuffer(aBuffer);
+    sound.play();
+}
+
 Soundcmp::Soundcmp(Entity *p) : Component(p)
 {
 

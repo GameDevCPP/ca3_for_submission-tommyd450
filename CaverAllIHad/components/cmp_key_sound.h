@@ -1,14 +1,16 @@
-//
-// Created by Tommy on 24/12/2022.
-//
 
-#ifndef GAMES_ENGINEERING_CMP_KEY_SOUND_H
-#define GAMES_ENGINEERING_CMP_KEY_SOUND_H
+#include "ecm.h"
+#include "SFML/Window/Keyboard.hpp"
+#include "cmp_sound.h"
 
 
-class cmp_key_sound {
+
+class KeySound : public Soundcmp {
+protected:
+    std::shared_ptr<Entity> _player;
+public:
+    void update(double dt) override;
+    explicit KeySound(Entity* p, std::shared_ptr<Entity> pl);
+    ~KeySound() = default;
 
 };
-
-
-#endif //GAMES_ENGINEERING_CMP_KEY_SOUND_H

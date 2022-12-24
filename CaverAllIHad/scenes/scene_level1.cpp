@@ -9,6 +9,7 @@
 #include <thread>
 #include <../cellAuto/cellularAutomata.h>
 #include "../components/cmp_player_sounds.h"
+#include "../components/cmp_key_sound.h"
 
 using namespace std;
 using namespace sf;
@@ -55,6 +56,7 @@ void Level1Scene::Load() {
         o->setShape<sf::CircleShape>(8.f,3);
         o->getShape().setFillColor(Color::Yellow);
         key->addComponent<KeyItemComponent>(player,kt);
+        key->addComponent<KeySound>(player);
     }
 
 
