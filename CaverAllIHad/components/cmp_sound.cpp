@@ -26,6 +26,5 @@ void Soundcmp::stop()
 
 Soundcmp::Soundcmp(Entity *p) : Component(p)
 {
-
 }
 
