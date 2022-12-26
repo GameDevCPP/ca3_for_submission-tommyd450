@@ -94,7 +94,7 @@ void Level1Scene::Update(const double& dt) {
     view1.setCenter(player->getPosition().x,player->getPosition().y);
     Engine::GetWindow().setView(view1);
   if (ls::getTileAt(player->getPosition()) == ls::END && kt->keysCollected) {
-    Engine::ChangeScene((Scene*)&level2);
+    Engine::ChangeScene((Scene*)&level1);
   }
 
 

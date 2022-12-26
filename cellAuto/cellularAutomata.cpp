@@ -17,8 +17,8 @@ using namespace std;
 
 
 namespace CA {
-    int width = 50;
-    int height = 50;
+    int width = 100;
+    int height = 100;
 
 
     vector<char> row(width, ' ');
