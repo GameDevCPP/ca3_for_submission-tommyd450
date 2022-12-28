@@ -46,7 +46,7 @@ file(GLOB_RECURSE RESOURCE_FILES "res/*.*")
 file(GLOB_RECURSE SOURCE_FILES engine/*.cpp engine/*.h)
 add_library(lib_engine STATIC ${SOURCE_FILES} ${RESOURCE_FILES})
 target_include_directories(lib_engine INTERFACE "${CMAKE_SOURCE_DIR}/engine/" PUBLIC SYSTEM ${B2D_INCS} )
-target_link_libraries(lib_engine lib_tile_level_loader lib_maths lib_ecm Box2D sfml-graphics sfml-audio cellAuto)
+target_link_libraries(lib_engine lib_tile_level_loader lib_maths lib_ecm Box2D sfml-graphics sfml-audio cellAuto ;lib_csvRead)
 
 ## Maths lib
 add_library(lib_maths INTERFACE)
@@ -70,6 +70,11 @@ file(GLOB_RECURSE SOURCE_FILES cellAuto/*.cpp cellAuto/*.h)
 add_library(cellAuto STATIC ${SOURCE_FILES})
 target_include_directories(cellAuto INTERFACE "${CMAKE_SOURCE_DIR}/cellAuto" )
 
+## CsvReader Library
+file(GLOB_RECURSE SOURCE_FILES lib_csvRead/*.cpp lib_csvRead/*.h)
+add_library(lib_csvRead STATIC ${SOURCE_FILES})
+target_include_directories(lib_csvRead INTERFACE "${CMAKE_SOURCE_DIR}/lib_csvRead" )
+
 
 #### Add Practical Projects####
 
@@ -79,7 +84,7 @@ target_include_directories(cellAuto INTERFACE "${CMAKE_SOURCE_DIR}/cellAuto" )
 file(GLOB_RECURSE SOURCES CaverAllIHad/*.cpp )
 file(GLOB_RECURSE CMPNTS CaverAllIHad/components/*.cpp )
 file(GLOB_RECURSE SCENES CaverAllIHad/scenes/*.cpp )
-add_executable(Caver ${SOURCES} ${RESOURCE_FILES} CaverAllIHad/components/cmp_key_sound.cpp CaverAllIHad/components/cmp_key_sound.h)
+add_executable(Caver ${SOURCES} ${RESOURCE_FILES} CaverAllIHad/components/cmp_key_sound.cpp CaverAllIHad/components/cmp_key_sound.h lib_csvRead/csvReader.h lib_csvRead/csvReader.cpp)
 source_group("components" FILES ${CMPNTS})
 source_group("resources" FILES ${RESOURCE_FILES})
 #target_include_directories(PRACTICAL_6_PLATFORMER SYSTEM PRIVATE ${SFML_INCS} ${B2D_INCS})

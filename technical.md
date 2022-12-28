@@ -22,5 +22,9 @@
   
 - Memory Management
   - Outside of using smart pointers for player and the keytracker there is no other heavy use of memory management throughout the project.
+  - At the end of the scene all shared pointers are reset.
+
+- Management of Game Resources
+  - Sound is mostly handled by the sound components but the audio used by them is output using sfml audio
 
 - Common Errors

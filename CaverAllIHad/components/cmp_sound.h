@@ -4,6 +4,7 @@
 
 #ifndef cmp_sound_h
 #define cmp_sound_h
+#include "../lib_csvRead/csvReader.h"
 
 class Soundcmp : public Component {
 protected:

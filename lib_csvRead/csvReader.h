@@ -1,8 +1,13 @@
-//
-// Created by Tommy on 28/12/2022.
-//
+#include <vector>
+#include <string>
+#include "fstream"
+namespace CR
+{
 
-#ifndef GAMES_ENGINEERING_CSVREADER_H
-#define GAMES_ENGINEERING_CSVREADER_H
+    class CsvReader
+    {
+    public:
+        static std::vector<std::string> readFile (std::string file, std::string search);
+    };
 
-#endif //GAMES_ENGINEERING_CSVREADER_H
+}

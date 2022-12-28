@@ -78,6 +78,7 @@ void PlayerPhysicsComponent::update(double dt) {
             //teleport(Vector2f(pos.x, pos.y - 2.0f));
             impulse(Vector2f(0, -0.035f));
 
+
         }else
         {
 

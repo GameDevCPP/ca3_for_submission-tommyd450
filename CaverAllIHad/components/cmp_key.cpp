@@ -9,7 +9,7 @@ void KeyItemComponent::update(double dt)
     if (auto pl = _player) {
         if (length(pl->getPosition() - _parent->getPosition()) < 25.0) {
             _kt->keysCollected++;
-            _parent->setForDelete();
+            //_parent->setForDelete();
         }
     }
 }
