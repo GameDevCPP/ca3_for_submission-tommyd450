@@ -70,13 +70,19 @@ void Level2Scene::Load() {
     turret->addComponent<EnemyTurretComponent>();
   }
 
-    auto key = makeEntity();
-    key->setPosition(ls::getTilePosition(ls::findTiles('k')[0]));
-    auto o = key->addComponent<ShapeComponent>();
-    o->setShape<sf::CircleShape>(8.f,3);
-    o->getShape().setFillColor(Color::Yellow);
-    key->addComponent<KeySound>(player);
-    key->addComponent<KeyItemComponent>(player,kt);
+    auto keys = ls::findTiles(ls::KEY);
+    for(auto k : keys)
+    {
+        auto pos = ls::getTilePosition(k);
+        pos += Vector2f(20.f, 20.f); //offset to center
+        auto key = makeEntity();
+        key->setPosition(pos);
+        auto o = key->addComponent<ShapeComponent>();
+        o->setShape<sf::CircleShape>(8.f,3);
+        o->getShape().setFillColor(Color::Yellow);
+        key->addComponent<KeyItemComponent>(player,kt);
+        key->addComponent<KeySound>(player);
+    }
 
 
   // Add physics colliders to level tiles.

@@ -11,11 +11,14 @@ void PlayerSound::update(double dt)
         load(p[2]);
         play();
     }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&& _player->get_components<PlayerPhysicsComponent>()[0]->isGrounded()==false) {
+    if(sound.getStatus() != sound.Playing && sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&& _player->get_components<PlayerPhysicsComponent>()[0]->isGrounded()==false) {
         std::vector<std::string> p = CsvReader::readFile("../bin/res/soundpath.csv","2");
         load(p[2]);
         play();
 
+    } else if(_player->get_components<PlayerPhysicsComponent>()[0]->isGrounded())
+    {
+        sound.stop();
     }
 
 }
