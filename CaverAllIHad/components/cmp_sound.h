@@ -13,7 +13,7 @@ public:
     sf::SoundBuffer aBuffer;
     sf::Sound sound;
     void update(double dt) override;
-    virtual void load(std::string loadRoute);
+    void load(std::string loadRoute);
     void render() override {};
     void play();
     void stop();

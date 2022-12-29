@@ -49,6 +49,8 @@ In addition to this outline, I have an example of short design document from Ric
 ## Sound (sound effects)
 * Using sfml and the entity component model sounds are implemented using an ecm family.
 * For player effects and item collection
+* Key sound effect sourced from : https://opengameart.org/content/picked-coin-echo
+* Jump Sound Effect sourced from : https://opengameart.org/content/slime-jump-effect
 
 
 ## Music

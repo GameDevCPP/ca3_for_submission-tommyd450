@@ -93,7 +93,7 @@ void Level1Scene::Update(const double& dt) {
     sf::View view1(sf::FloatRect(600.f, 1200.f, 2000.f, 1000.f));
     view1.setCenter(player->getPosition().x,player->getPosition().y);
     Engine::GetWindow().setView(view1);
-  if (ls::getTileAt(player->getPosition()) == ls::END && kt->keysCollected) {
+  if (ls::getTileAt(player->getPosition()) == ls::END && kt->keysCollected >=5) {
     Engine::ChangeScene((Scene*)&level1);
   }
 

@@ -76,7 +76,7 @@ void PlayerPhysicsComponent::update(double dt) {
             prevDT += dt;
             //setVelocity(Vector2f(getVelocity().x, -0.2f));
             //teleport(Vector2f(pos.x, pos.y - 2.0f));
-            impulse(Vector2f(0, -0.035f));
+            impulse(Vector2f(0*_groundspeed*dt, -0.3f*_groundspeed*dt));
 
 
         }else
