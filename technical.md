@@ -25,6 +25,32 @@
   - At the end of the scene all shared pointers are reset.
 
 - Management of Game Resources
-  - Sound is mostly handled by the sound components but the audio used by them is output using sfml audio
+  - Sound is mostly handled by the sound components but the audio used by them is output using sfml audio.
+  - 1 level is constantly regenerated and read in through the tile system library.
+
+- Additional Libraries
+  - Cellular Automata used for generation of level1 each time it is played, level 2 and 3 are created from it but are no regenerated.
+  - Basic Csv Reader library for sounds.
+  - On the astar branch I attempted to use this library but could not get it to work [Link](https://github.com/Sahnvour/PathFinder)
+
+- Advanced C++
+  - Vectors used throughout particularly in cellular automata and even in the csv library.
+  - Lambda Ternary used in the enemy ai component for simple swapping of direction.
+
+- Design Patterns
+  - Entity Component System
+
+- Sound and Music
+  - No music.
+  - Sound management through the reading of sounpath.csv
+
+- Repo Usage
+  - Basic Usage
+  - Several Commits
+  - Branching and Merging/Pull Requests.
+  - SFML and Box2d Submodule.
+
+- Project Management
+  - Trello Board
 
 - Common Errors
