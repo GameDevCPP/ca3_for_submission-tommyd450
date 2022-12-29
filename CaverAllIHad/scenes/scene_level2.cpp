@@ -34,14 +34,7 @@ void Level2Scene::Load() {
       s->getShape().setOrigin(Vector2f(10.f, 15.f));
 
       player->addComponent<PlayerPhysicsComponent>(Vector2f(20.f, 30.f));
-
-
-
-
-
-    // *********************************
     player->addTag("player");
-    player->addComponent<PlayerPhysicsComponent>(Vector2f(20.f, 30.f));
     kt = player->addComponent<KeyTracker>();
   }
 

@@ -7,32 +7,24 @@ using namespace sf;
 
 void EnemyAIComponent::update(double dt) {
   auto mov = _direction * (float)(dt * _speed);
-  mov.x += _direction.x * 16.f;
-  if (!validMove(_parent->getPosition() + mov)) {
-    _direction *= -1.f;
-  }
+  Vector2f b = _player->getPosition();
+  Vector2f c = _parent->getPosition();
 
-  move(_direction * (float)(dt * _speed));
-    createRoute();
+  Vector2f dif = b-c;
+  _direction.x = (dif.x >0)? 1 : -1;
+  _direction.y = (dif.y>0)? 1: -1;
+
+
+
+  
+  move(_direction * (float)(dt * _speed),phase);
   ActorMovementComponent::update(dt);
 }
 
-void EnemyAIComponent::createRoute()
-{
-    Vector2ul start (_parent->getPosition().x,_parent->getPosition().y);
-    auto tiles = ls::findTiles(ls::EMPTY);
-    vector<Vector2<size_t>> current = ls::findTiles(ls::getTileAt(_parent->getPosition()));
-
-    //cout << ls::getTilePosition(start.loc).x;
-    vector<Vector2ul> cList;
-    vector<Vector2ul> oList;
-    oList.push_back(start);
-
-
-}
 
 EnemyAIComponent::EnemyAIComponent(Entity* p, std::shared_ptr<Entity> player) : ActorMovementComponent(p) {
   _direction = Vector2f(1.0f, 0);
   _speed = 100.0f;
   _player = player;
+  phase = true;
 }

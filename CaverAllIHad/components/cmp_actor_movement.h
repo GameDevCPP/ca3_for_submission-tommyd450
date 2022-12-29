@@ -9,7 +9,7 @@ protected:
 
 public:
   void update(double dt) override;
-  void move(const sf::Vector2f&);
+  void move(const sf::Vector2f&,bool phase);
   void move(float x, float y);
   void render() override {}
   explicit ActorMovementComponent(Entity* p);

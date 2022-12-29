@@ -15,13 +15,13 @@ bool ActorMovementComponent::validMove(const sf::Vector2f& pos) {
   // return true;
 }
 
-void ActorMovementComponent::move(const sf::Vector2f& p) {
+void ActorMovementComponent::move(const sf::Vector2f& p,bool phase) {
   auto pp = _parent->getPosition() + p;
-  if (validMove(pp)) {
+  if (validMove(pp) || phase) {
     _parent->setPosition(pp);
   }
 }
 
 void ActorMovementComponent::move(float x, float y) {
-  move(Vector2f(x, y));
+  move(Vector2f(x, y),true);
 }
