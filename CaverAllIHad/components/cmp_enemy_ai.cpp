@@ -24,7 +24,7 @@ void EnemyAIComponent::update(double dt) {
 
 EnemyAIComponent::EnemyAIComponent(Entity* p, std::shared_ptr<Entity> player) : ActorMovementComponent(p) {
   _direction = Vector2f(1.0f, 0);
-  _speed = 100.0f;
+  _speed = 60.0f;
   _player = player;
   phase = true;
 }

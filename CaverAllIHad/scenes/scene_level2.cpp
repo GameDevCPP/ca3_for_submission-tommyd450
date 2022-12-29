@@ -19,9 +19,9 @@ static shared_ptr<KeyTracker> kt;
 
 void Level2Scene::Load() {
   cout << "Scene 2 Load" << endl;
-  ls::loadLevelFile("../bin/res/levels/level_2.txt", 40.0f);
+  ls::loadLevelFile("../bin/res/levels/lvl2.txt", 40.0f);
   auto ho = Engine::getWindowSize().y - (ls::getHeight() * 40.f);
-  ls::setOffset(Vector2f(0, ho));
+  ls::setOffset(Vector2f(0, 0));
 
   // Create player
   {

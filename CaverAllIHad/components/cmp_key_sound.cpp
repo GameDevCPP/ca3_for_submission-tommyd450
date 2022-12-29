@@ -19,7 +19,7 @@ void KeySound::update(double dt)
     }
     if(forDeletion)
     {
-        std::cout<<"Test"<<std::endl;
+        //std::cout<<"Test"<<std::endl;
         deletionDT += dt;
     }
     if(deletionDT>0.1)
